@@ -1,0 +1,3478 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "cont,me,piad,uma": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "piad,quer,uma": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "cont,piad,pod,uma": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "cont,piad,uma": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "fal,me,outr,piad": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "mais,piad,uma": {
+            "intent": "jokes.tell.another",
+            "domain": "default"
+          },
+          "cont,mais,me,uma": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "a,piad,qual,sua": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "a,e,piad,qual,sua": {
+            "intent": "jokes.tell",
+            "domain": "default"
+          },
+          "boa,essa,foi,piad": {
+            "intent": "jokes.evaluate.good",
+            "domain": "default"
+          },
+          "da,gost,piad": {
+            "intent": "jokes.evaluate.good",
+            "domain": "default"
+          },
+          "dess,muit,piad,ri": {
+            "intent": "jokes.evaluate.good",
+            "domain": "default"
+          },
+          "essa,foi,piad,ruim": {
+            "intent": "jokes.evaluate.bad",
+            "domain": "default"
+          },
+          "da,gost,nao,piad": {
+            "intent": "jokes.evaluate.bad",
+            "domain": "default"
+          },
+          "grac,piad,sem": {
+            "intent": "jokes.evaluate.bad",
+            "domain": "default"
+          },
+          "o,que": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "nao,sei": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "assim,com": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "fal,log": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "continu": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "a,e,qual,respost": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "diz,final,me,o": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "hmm": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "an": {
+            "intent": "jokes.confirmation",
+            "domain": "default"
+          },
+          "essa,explic,piad,pod": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "essa,o,piad,que,signif": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "cont,me,o,signific": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "e,engrac,essa,piad,por,que": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "a,explic,me,piad": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "a,entend,nao,piad": {
+            "intent": "jokes.explain",
+            "domain": "default"
+          },
+          "cont,deix,eu,piad,te,uma": {
+            "intent": "jokes.tellUser",
+            "domain": "default"
+          },
+          "cont,piad,poss,te,uma": {
+            "intent": "jokes.tellUser",
+            "domain": "default"
+          },
+          "cont,piad,te,uma,vou": {
+            "intent": "jokes.tellUser",
+            "domain": "default"
+          },
+          "escut,essa,piad": {
+            "intent": "jokes.tellUser",
+            "domain": "default"
+          },
+          "a,e,essa,piad": {
+            "intent": "jokes.tellUser",
+            "domain": "default"
+          },
+          "cont,me,outr": {
+            "intent": "jokes.tell.another",
+            "domain": "default"
+          },
+          "outr,piad,quer": {
+            "intent": "jokes.tell.another",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "bom,dia": {
+            "intent": "greetings.greeting",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "greetings.greeting",
+            "domain": "default"
+          },
+          "fal": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "com,esta,voc": {
+            "intent": "greetings.how_are_you",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "bem,vou": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "firm": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "em,ordem,tud": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "otim,tud": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "bem": {
+            "intent": "greetings.how_user_are",
+            "domain": "default"
+          },
+          "boa,com,faz,piad,quer,sab,uma": {
+            "intent": "jokes.tips",
+            "domain": "default"
+          },
+          "cont,dic,par,piad": {
+            "intent": "jokes.tips",
+            "domain": "default"
+          },
+          "com,engrac,ser": {
+            "intent": "jokes.tips",
+            "domain": "default"
+          },
+          "a,ajud,me,pratic": {
+            "intent": "jokes.practice",
+            "domain": "default"
+          },
+          "cont,piad,pratic,quer": {
+            "intent": "jokes.practice",
+            "domain": "default"
+          },
+          "ajud,com,me,piad": {
+            "intent": "jokes.practice",
+            "domain": "default"
+          },
+          "com,cont,piad,uma": {
+            "intent": "jokes.how_to_tell",
+            "domain": "default"
+          },
+          "com,cont,eu,piad,uma": {
+            "intent": "jokes.how_to_tell",
+            "domain": "default"
+          },
+          "cont,os,par,pass,piad,qua,sao,uma": {
+            "intent": "jokes.how_to_tell",
+            "domain": "default"
+          },
+          "cont,faz,o,par,piad,que,uma": {
+            "intent": "jokes.how_to_tell",
+            "domain": "default"
+          },
+          "sim": {
+            "intent": "jokes.practice.confirm",
+            "domain": "default"
+          },
+          "clar": {
+            "intent": "jokes.practice.confirm",
+            "domain": "default"
+          },
+          "certez,com": {
+            "intent": "jokes.practice.confirm",
+            "domain": "default"
+          },
+          "pratic,vam": {
+            "intent": "jokes.practice.confirm",
+            "domain": "default"
+          },
+          "a,atravess,cheg,do,galinh,lad,outr,par,por,que,rua": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "anda,animal,com,e,o,pat,pern,qual,que,so,uma": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "azul,ceu,e,essa,minh,o,piad,por,que": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "e,essa,minh,piad": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "escut,essa": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "porqu": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "qual": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          },
+          "e,qual": {
+            "intent": "jokes.userJoke",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "jokes.tell": "default",
+          "jokes.evaluate.good": "default",
+          "jokes.evaluate.bad": "default",
+          "jokes.confirmation": "default",
+          "jokes.explain": "default",
+          "jokes.tellUser": "default",
+          "jokes.tell.another": "default",
+          "greetings.hello": "default",
+          "greetings.greeting": "default",
+          "greetings.how_are_you": "default",
+          "greetings.how_user_are": "default",
+          "jokes.tips": "default",
+          "jokes.practice": "default",
+          "jokes.how_to_tell": "default",
+          "jokes.practice.confirm": "default",
+          "jokes.userJoke": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "me conta uma piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero uma piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode contar uma piada?",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "conta uma piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "me fala outra piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "mais uma piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "me conte mais uma",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual a sua piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual é a sua piada",
+            "intent": "jokes.tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "essa piada foi boa",
+            "intent": "jokes.evaluate.good"
+          },
+          {
+            "domain": "default",
+            "utterance": "gostei da piada",
+            "intent": "jokes.evaluate.good"
+          },
+          {
+            "domain": "default",
+            "utterance": "ri muito dessa piada",
+            "intent": "jokes.evaluate.good"
+          },
+          {
+            "domain": "default",
+            "utterance": "essa piada foi ruim",
+            "intent": "jokes.evaluate.bad"
+          },
+          {
+            "domain": "default",
+            "utterance": "não gostei da piada",
+            "intent": "jokes.evaluate.bad"
+          },
+          {
+            "domain": "default",
+            "utterance": "piada sem graça",
+            "intent": "jokes.evaluate.bad"
+          },
+          {
+            "domain": "default",
+            "utterance": "O que?",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "Não sei",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "como assim?",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "fala logo",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "continua",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual é a resposta?",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "me diz o final",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "hmm",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "an",
+            "intent": "jokes.confirmation"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode explicar essa piada?",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "o que significa essa piada?",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "me conta o significado",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "por que essa piada é engraçada?",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "me explica a piada",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "não entendi a piada",
+            "intent": "jokes.explain"
+          },
+          {
+            "domain": "default",
+            "utterance": "deixa eu te contar uma piada",
+            "intent": "jokes.tellUser"
+          },
+          {
+            "domain": "default",
+            "utterance": "posso te contar uma piada?",
+            "intent": "jokes.tellUser"
+          },
+          {
+            "domain": "default",
+            "utterance": "vou te contar uma piada",
+            "intent": "jokes.tellUser"
+          },
+          {
+            "domain": "default",
+            "utterance": "escuta essa piada",
+            "intent": "jokes.tellUser"
+          },
+          {
+            "domain": "default",
+            "utterance": "a piada é essa",
+            "intent": "jokes.tellUser"
+          },
+          {
+            "domain": "default",
+            "utterance": "me conta outra",
+            "intent": "jokes.tell.another"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero outra piada",
+            "intent": "jokes.tell.another"
+          },
+          {
+            "domain": "default",
+            "utterance": "mais uma piada",
+            "intent": "jokes.tell.another"
+          },
+          {
+            "domain": "default",
+            "utterance": "olá",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "greetings.greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "greetings.greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "fala",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "como você está?",
+            "intent": "greetings.how_are_you"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem?",
+            "intent": "greetings.how_are_you"
+          },
+          {
+            "domain": "default",
+            "utterance": "vou bem",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "firme",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo em ordem",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo ótimo",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "bem",
+            "intent": "greetings.how_user_are"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero saber como fazer uma boa piada",
+            "intent": "jokes.tips"
+          },
+          {
+            "domain": "default",
+            "utterance": "dicas para contar piadas",
+            "intent": "jokes.tips"
+          },
+          {
+            "domain": "default",
+            "utterance": "como ser engraçado?",
+            "intent": "jokes.tips"
+          },
+          {
+            "domain": "default",
+            "utterance": "me ajude a praticar",
+            "intent": "jokes.practice"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero praticar contar piadas",
+            "intent": "jokes.practice"
+          },
+          {
+            "domain": "default",
+            "utterance": "me ajude com piadas",
+            "intent": "jokes.practice"
+          },
+          {
+            "domain": "default",
+            "utterance": "como contar uma piada",
+            "intent": "jokes.how_to_tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "como eu conto uma piada?",
+            "intent": "jokes.how_to_tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "quais são os passos para contar uma piada?",
+            "intent": "jokes.how_to_tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "o que fazer para contar uma piada?",
+            "intent": "jokes.how_to_tell"
+          },
+          {
+            "domain": "default",
+            "utterance": "sim",
+            "intent": "jokes.practice.confirm"
+          },
+          {
+            "domain": "default",
+            "utterance": "claro",
+            "intent": "jokes.practice.confirm"
+          },
+          {
+            "domain": "default",
+            "utterance": "com certeza",
+            "intent": "jokes.practice.confirm"
+          },
+          {
+            "domain": "default",
+            "utterance": "vamos praticar",
+            "intent": "jokes.practice.confirm"
+          },
+          {
+            "domain": "default",
+            "utterance": "Por que a galinha atravessou a rua? Para chegar do outro lado!",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual é o animal que anda com uma perna só? O pato!",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "minha piada é essa: por que o céu é azul?",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "minha piada é essa",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "escuta essa",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "porque",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "o que",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual é",
+            "intent": "jokes.userJoke"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual",
+            "intent": "jokes.userJoke"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "me": 1,
+              "cont": 1,
+              "uma": 1,
+              "piad": 1,
+              "quer": 1,
+              "pod": 1,
+              "fal": 1,
+              "outr": 1,
+              "mais": 1,
+              "qual": 1,
+              "a": 1,
+              "sua": 1,
+              "e": 1,
+              "essa": 1,
+              "foi": 1,
+              "boa": 1,
+              "gost": 1,
+              "da": 1,
+              "ri": 1,
+              "muit": 1,
+              "dess": 1,
+              "ruim": 1,
+              "nao": 1,
+              "sem": 1,
+              "grac": 1,
+              "o": 1,
+              "que": 1,
+              "sei": 1,
+              "com": 1,
+              "assim": 1,
+              "log": 1,
+              "continu": 1,
+              "respost": 1,
+              "diz": 1,
+              "final": 1,
+              "hmm": 1,
+              "an": 1,
+              "explic": 1,
+              "signif": 1,
+              "signific": 1,
+              "por": 1,
+              "engrac": 1,
+              "entend": 1,
+              "deix": 1,
+              "eu": 1,
+              "te": 1,
+              "poss": 1,
+              "vou": 1,
+              "escut": 1,
+              "ola": 1,
+              "oi": 1,
+              "bom": 1,
+              "dia": 1,
+              "noit": 1,
+              "voc": 1,
+              "esta": 1,
+              "tud": 1,
+              "bem": 1,
+              "firm": 1,
+              "em": 1,
+              "ordem": 1,
+              "otim": 1,
+              "sab": 1,
+              "faz": 1,
+              "dic": 1,
+              "par": 1,
+              "ser": 1,
+              "ajud": 1,
+              "pratic": 1,
+              "qua": 1,
+              "sao": 1,
+              "os": 1,
+              "pass": 1,
+              "sim": 1,
+              "clar": 1,
+              "certez": 1,
+              "vam": 1,
+              "galinh": 1,
+              "atravess": 1,
+              "rua": 1,
+              "cheg": 1,
+              "do": 1,
+              "lad": 1,
+              "animal": 1,
+              "anda": 1,
+              "pern": 1,
+              "so": 1,
+              "pat": 1,
+              "minh": 1,
+              "ceu": 1,
+              "azul": 1,
+              "porqu": 1
+            },
+            "intents": {
+              "jokes.tell": 1,
+              "jokes.evaluate.good": 1,
+              "jokes.evaluate.bad": 1,
+              "jokes.confirmation": 1,
+              "jokes.explain": 1,
+              "jokes.tellUser": 1,
+              "jokes.tell.another": 1,
+              "greetings.hello": 1,
+              "greetings.greeting": 1,
+              "greetings.how_are_you": 1,
+              "greetings.how_user_are": 1,
+              "jokes.tips": 1,
+              "jokes.practice": 1,
+              "jokes.how_to_tell": 1,
+              "jokes.practice.confirm": 1,
+              "jokes.userJoke": 1
+            },
+            "intentFeatures": {
+              "jokes.tell": {
+                "me": 1,
+                "cont": 1,
+                "uma": 1,
+                "piad": 1,
+                "quer": 1,
+                "pod": 1,
+                "fal": 1,
+                "outr": 1,
+                "mais": 1,
+                "qual": 1,
+                "a": 1,
+                "sua": 1,
+                "e": 1
+              },
+              "jokes.evaluate.good": {
+                "essa": 1,
+                "piad": 1,
+                "foi": 1,
+                "boa": 1,
+                "gost": 1,
+                "da": 1,
+                "ri": 1,
+                "muit": 1,
+                "dess": 1
+              },
+              "jokes.evaluate.bad": {
+                "essa": 1,
+                "piad": 1,
+                "foi": 1,
+                "ruim": 1,
+                "nao": 1,
+                "gost": 1,
+                "da": 1,
+                "sem": 1,
+                "grac": 1
+              },
+              "jokes.confirmation": {
+                "o": 1,
+                "que": 1,
+                "nao": 1,
+                "sei": 1,
+                "com": 1,
+                "assim": 1,
+                "fal": 1,
+                "log": 1,
+                "continu": 1,
+                "qual": 1,
+                "e": 1,
+                "a": 1,
+                "respost": 1,
+                "me": 1,
+                "diz": 1,
+                "final": 1,
+                "hmm": 1,
+                "an": 1
+              },
+              "jokes.explain": {
+                "pod": 1,
+                "explic": 1,
+                "essa": 1,
+                "piad": 1,
+                "o": 1,
+                "que": 1,
+                "signif": 1,
+                "me": 1,
+                "cont": 1,
+                "signific": 1,
+                "por": 1,
+                "e": 1,
+                "engrac": 1,
+                "a": 1,
+                "nao": 1,
+                "entend": 1
+              },
+              "jokes.tellUser": {
+                "deix": 1,
+                "eu": 1,
+                "te": 1,
+                "cont": 1,
+                "uma": 1,
+                "piad": 1,
+                "poss": 1,
+                "vou": 1,
+                "escut": 1,
+                "essa": 1,
+                "a": 1,
+                "e": 1
+              },
+              "jokes.tell.another": {
+                "me": 1,
+                "cont": 1,
+                "outr": 1,
+                "quer": 1,
+                "piad": 1,
+                "mais": 1,
+                "uma": 1
+              },
+              "greetings.hello": {
+                "ola": 1,
+                "oi": 1,
+                "fal": 1
+              },
+              "greetings.greeting": {
+                "bom": 1,
+                "dia": 1,
+                "boa": 1,
+                "noit": 1
+              },
+              "greetings.how_are_you": {
+                "com": 1,
+                "voc": 1,
+                "esta": 1,
+                "tud": 1,
+                "bem": 1
+              },
+              "greetings.how_user_are": {
+                "vou": 1,
+                "bem": 1,
+                "firm": 1,
+                "tud": 1,
+                "em": 1,
+                "ordem": 1,
+                "otim": 1
+              },
+              "jokes.tips": {
+                "quer": 1,
+                "sab": 1,
+                "com": 1,
+                "faz": 1,
+                "uma": 1,
+                "boa": 1,
+                "piad": 1,
+                "dic": 1,
+                "par": 1,
+                "cont": 1,
+                "ser": 1,
+                "engrac": 1
+              },
+              "jokes.practice": {
+                "me": 1,
+                "ajud": 1,
+                "a": 1,
+                "pratic": 1,
+                "quer": 1,
+                "cont": 1,
+                "piad": 1,
+                "com": 1
+              },
+              "jokes.how_to_tell": {
+                "com": 1,
+                "cont": 1,
+                "uma": 1,
+                "piad": 1,
+                "eu": 1,
+                "qua": 1,
+                "sao": 1,
+                "os": 1,
+                "pass": 1,
+                "par": 1,
+                "o": 1,
+                "que": 1,
+                "faz": 1
+              },
+              "jokes.practice.confirm": {
+                "sim": 1,
+                "clar": 1,
+                "com": 1,
+                "certez": 1,
+                "vam": 1,
+                "pratic": 1
+              },
+              "jokes.userJoke": {
+                "por": 1,
+                "que": 1,
+                "a": 1,
+                "galinh": 1,
+                "atravess": 1,
+                "rua": 1,
+                "par": 1,
+                "cheg": 1,
+                "do": 1,
+                "outr": 1,
+                "lad": 1,
+                "qual": 1,
+                "e": 1,
+                "o": 1,
+                "animal": 1,
+                "anda": 1,
+                "com": 1,
+                "uma": 1,
+                "pern": 1,
+                "so": 1,
+                "pat": 1,
+                "minh": 1,
+                "piad": 1,
+                "essa": 1,
+                "ceu": 1,
+                "azul": 1,
+                "escut": 1,
+                "porqu": 1
+              }
+            },
+            "featuresToIntent": {
+              "me": [
+                "jokes.tell",
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.tell.another",
+                "jokes.practice"
+              ],
+              "cont": [
+                "jokes.tell",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.tell.another",
+                "jokes.tips",
+                "jokes.practice",
+                "jokes.how_to_tell"
+              ],
+              "uma": [
+                "jokes.tell",
+                "jokes.tellUser",
+                "jokes.tell.another",
+                "jokes.tips",
+                "jokes.how_to_tell",
+                "jokes.userJoke"
+              ],
+              "piad": [
+                "jokes.tell",
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.tell.another",
+                "jokes.tips",
+                "jokes.practice",
+                "jokes.how_to_tell",
+                "jokes.userJoke"
+              ],
+              "quer": [
+                "jokes.tell",
+                "jokes.tell.another",
+                "jokes.tips",
+                "jokes.practice"
+              ],
+              "pod": [
+                "jokes.tell",
+                "jokes.explain"
+              ],
+              "fal": [
+                "jokes.tell",
+                "jokes.confirmation",
+                "greetings.hello"
+              ],
+              "outr": [
+                "jokes.tell",
+                "jokes.tell.another",
+                "jokes.userJoke"
+              ],
+              "mais": [
+                "jokes.tell",
+                "jokes.tell.another"
+              ],
+              "qual": [
+                "jokes.tell",
+                "jokes.confirmation",
+                "jokes.userJoke"
+              ],
+              "a": [
+                "jokes.tell",
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.practice",
+                "jokes.userJoke"
+              ],
+              "sua": [
+                "jokes.tell"
+              ],
+              "e": [
+                "jokes.tell",
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.userJoke"
+              ],
+              "essa": [
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.userJoke"
+              ],
+              "foi": [
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad"
+              ],
+              "boa": [
+                "jokes.evaluate.good",
+                "greetings.greeting",
+                "jokes.tips"
+              ],
+              "gost": [
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad"
+              ],
+              "da": [
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad"
+              ],
+              "ri": [
+                "jokes.evaluate.good"
+              ],
+              "muit": [
+                "jokes.evaluate.good"
+              ],
+              "dess": [
+                "jokes.evaluate.good"
+              ],
+              "ruim": [
+                "jokes.evaluate.bad"
+              ],
+              "nao": [
+                "jokes.evaluate.bad",
+                "jokes.confirmation",
+                "jokes.explain"
+              ],
+              "sem": [
+                "jokes.evaluate.bad"
+              ],
+              "grac": [
+                "jokes.evaluate.bad"
+              ],
+              "o": [
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.how_to_tell",
+                "jokes.userJoke"
+              ],
+              "que": [
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.how_to_tell",
+                "jokes.userJoke"
+              ],
+              "sei": [
+                "jokes.confirmation"
+              ],
+              "com": [
+                "jokes.confirmation",
+                "greetings.how_are_you",
+                "jokes.tips",
+                "jokes.practice",
+                "jokes.how_to_tell",
+                "jokes.practice.confirm",
+                "jokes.userJoke"
+              ],
+              "assim": [
+                "jokes.confirmation"
+              ],
+              "log": [
+                "jokes.confirmation"
+              ],
+              "continu": [
+                "jokes.confirmation"
+              ],
+              "respost": [
+                "jokes.confirmation"
+              ],
+              "diz": [
+                "jokes.confirmation"
+              ],
+              "final": [
+                "jokes.confirmation"
+              ],
+              "hmm": [
+                "jokes.confirmation"
+              ],
+              "an": [
+                "jokes.confirmation"
+              ],
+              "explic": [
+                "jokes.explain"
+              ],
+              "signif": [
+                "jokes.explain"
+              ],
+              "signific": [
+                "jokes.explain"
+              ],
+              "por": [
+                "jokes.explain",
+                "jokes.userJoke"
+              ],
+              "engrac": [
+                "jokes.explain",
+                "jokes.tips"
+              ],
+              "entend": [
+                "jokes.explain"
+              ],
+              "deix": [
+                "jokes.tellUser"
+              ],
+              "eu": [
+                "jokes.tellUser",
+                "jokes.how_to_tell"
+              ],
+              "te": [
+                "jokes.tellUser"
+              ],
+              "poss": [
+                "jokes.tellUser"
+              ],
+              "vou": [
+                "jokes.tellUser",
+                "greetings.how_user_are"
+              ],
+              "escut": [
+                "jokes.tellUser",
+                "jokes.userJoke"
+              ],
+              "ola": [
+                "greetings.hello"
+              ],
+              "oi": [
+                "greetings.hello"
+              ],
+              "bom": [
+                "greetings.greeting"
+              ],
+              "dia": [
+                "greetings.greeting"
+              ],
+              "noit": [
+                "greetings.greeting"
+              ],
+              "voc": [
+                "greetings.how_are_you"
+              ],
+              "esta": [
+                "greetings.how_are_you"
+              ],
+              "tud": [
+                "greetings.how_are_you",
+                "greetings.how_user_are"
+              ],
+              "bem": [
+                "greetings.how_are_you",
+                "greetings.how_user_are"
+              ],
+              "firm": [
+                "greetings.how_user_are"
+              ],
+              "em": [
+                "greetings.how_user_are"
+              ],
+              "ordem": [
+                "greetings.how_user_are"
+              ],
+              "otim": [
+                "greetings.how_user_are"
+              ],
+              "sab": [
+                "jokes.tips"
+              ],
+              "faz": [
+                "jokes.tips",
+                "jokes.how_to_tell"
+              ],
+              "dic": [
+                "jokes.tips"
+              ],
+              "par": [
+                "jokes.tips",
+                "jokes.how_to_tell",
+                "jokes.userJoke"
+              ],
+              "ser": [
+                "jokes.tips"
+              ],
+              "ajud": [
+                "jokes.practice"
+              ],
+              "pratic": [
+                "jokes.practice",
+                "jokes.practice.confirm"
+              ],
+              "qua": [
+                "jokes.how_to_tell"
+              ],
+              "sao": [
+                "jokes.how_to_tell"
+              ],
+              "os": [
+                "jokes.how_to_tell"
+              ],
+              "pass": [
+                "jokes.how_to_tell"
+              ],
+              "sim": [
+                "jokes.practice.confirm"
+              ],
+              "clar": [
+                "jokes.practice.confirm"
+              ],
+              "certez": [
+                "jokes.practice.confirm"
+              ],
+              "vam": [
+                "jokes.practice.confirm"
+              ],
+              "galinh": [
+                "jokes.userJoke"
+              ],
+              "atravess": [
+                "jokes.userJoke"
+              ],
+              "rua": [
+                "jokes.userJoke"
+              ],
+              "cheg": [
+                "jokes.userJoke"
+              ],
+              "do": [
+                "jokes.userJoke"
+              ],
+              "lad": [
+                "jokes.userJoke"
+              ],
+              "animal": [
+                "jokes.userJoke"
+              ],
+              "anda": [
+                "jokes.userJoke"
+              ],
+              "pern": [
+                "jokes.userJoke"
+              ],
+              "so": [
+                "jokes.userJoke"
+              ],
+              "pat": [
+                "jokes.userJoke"
+              ],
+              "minh": [
+                "jokes.userJoke"
+              ],
+              "ceu": [
+                "jokes.userJoke"
+              ],
+              "azul": [
+                "jokes.userJoke"
+              ],
+              "porqu": [
+                "jokes.userJoke"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "me",
+                "cont",
+                "uma",
+                "piad",
+                "quer",
+                "pod",
+                "fal",
+                "outr",
+                "mais",
+                "qual",
+                "a",
+                "sua",
+                "e",
+                "essa",
+                "foi",
+                "boa",
+                "gost",
+                "da",
+                "ri",
+                "muit",
+                "dess",
+                "ruim",
+                "nao",
+                "sem",
+                "grac",
+                "o",
+                "que",
+                "sei",
+                "com",
+                "assim",
+                "log",
+                "continu",
+                "respost",
+                "diz",
+                "final",
+                "hmm",
+                "an",
+                "explic",
+                "signif",
+                "signific",
+                "por",
+                "engrac",
+                "entend",
+                "deix",
+                "eu",
+                "te",
+                "poss",
+                "vou",
+                "escut",
+                "ola",
+                "oi",
+                "bom",
+                "dia",
+                "noit",
+                "voc",
+                "esta",
+                "tud",
+                "bem",
+                "firm",
+                "em",
+                "ordem",
+                "otim",
+                "sab",
+                "faz",
+                "dic",
+                "par",
+                "ser",
+                "ajud",
+                "pratic",
+                "qua",
+                "sao",
+                "os",
+                "pass",
+                "sim",
+                "clar",
+                "certez",
+                "vam",
+                "galinh",
+                "atravess",
+                "rua",
+                "cheg",
+                "do",
+                "lad",
+                "animal",
+                "anda",
+                "pern",
+                "so",
+                "pat",
+                "minh",
+                "ceu",
+                "azul",
+                "porqu"
+              ],
+              "intents": [
+                "jokes.tell",
+                "jokes.evaluate.good",
+                "jokes.evaluate.bad",
+                "jokes.confirmation",
+                "jokes.explain",
+                "jokes.tellUser",
+                "jokes.tell.another",
+                "greetings.hello",
+                "greetings.greeting",
+                "greetings.how_are_you",
+                "greetings.how_user_are",
+                "jokes.tips",
+                "jokes.practice",
+                "jokes.how_to_tell",
+                "jokes.practice.confirm",
+                "jokes.userJoke"
+              ],
+              "perceptrons": [
+                [
+                  6.295863151550293,
+                  1.7965435981750488,
+                  14.385269165039062,
+                  3.561389207839966,
+                  3.7572762966156006,
+                  3.4011833667755127,
+                  9.880461692810059,
+                  0.3911433815956116,
+                  -2.7921547889709473,
+                  6.249546051025391,
+                  1.008729338645935,
+                  10.447510719299316,
+                  -0.014635276049375534,
+                  -2.9800021648406982,
+                  -1.5279409885406494,
+                  -2.766317129135132,
+                  -1.8487461805343628,
+                  -1.8487461805343628,
+                  -1.280477523803711,
+                  -1.280477523803711,
+                  -1.280477523803711,
+                  -0.5851636528968811,
+                  -1.7028275728225708,
+                  -1.45932936668396,
+                  -1.45932936668396,
+                  -3.619295358657837,
+                  -1.880040168762207,
+                  -0.08765771239995956,
+                  -12.255321502685547,
+                  -0.10797052830457687,
+                  -2.522825241088867,
+                  -0.16177688539028168,
+                  -1.872718095779419,
+                  -0.46960100531578064,
+                  -0.46960100531578064,
+                  -0.11727088689804077,
+                  -0.11261387914419174,
+                  -7.083746433258057,
+                  -0.08011932671070099,
+                  -1.3979307413101196,
+                  -0.1783534735441208,
+                  -0.1783534735441208,
+                  -0.9221950173377991,
+                  -2.537679433822632,
+                  -2.8973166942596436,
+                  -9.80079174041748,
+                  -3.461611747741699,
+                  -3.6795661449432373,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.7977540493011475,
+                  -2.990126609802246,
+                  0,
+                  -3.313547134399414,
+                  0,
+                  -0.37552985548973083,
+                  -2.1044466495513916,
+                  -2.171870470046997,
+                  -2.171870470046997,
+                  -2.171870470046997,
+                  -2.171870470046997,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.18548902869224548,
+                  -0.18548902869224548,
+                  -0.18548902869224548,
+                  -0.18548902869224548,
+                  -0.18548902869224548,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -8.018107405963239
+                ],
+                [
+                  -0.9278795123100281,
+                  -1.1299946308135986,
+                  -2.319748640060425,
+                  3.691730260848999,
+                  -2.0922532081604004,
+                  -1.004778265953064,
+                  -0.43375691771507263,
+                  -0.9133781790733337,
+                  -0.4770054817199707,
+                  -0.5584353804588318,
+                  -1.2205839157104492,
+                  -0.4953731894493103,
+                  -1.4515790939331055,
+                  0.05830132216215134,
+                  5.366616725921631,
+                  6.567166328430176,
+                  5.9234514236450195,
+                  5.9234514236450195,
+                  3.998572587966919,
+                  3.998572587966919,
+                  3.998572587966919,
+                  -7.710983753204346,
+                  -14.028564453125,
+                  -1.1505354642868042,
+                  -1.1505354642868042,
+                  -0.7446346282958984,
+                  -0.9952471852302551,
+                  -0.024238696321845055,
+                  -1.7073420286178589,
+                  -0.08881470561027527,
+                  -0.12213815748691559,
+                  -0.1873534917831421,
+                  -0.04489918053150177,
+                  -0.03683168441057205,
+                  -0.03683168441057205,
+                  -0.17846156656742096,
+                  -0.1728130578994751,
+                  -1.3397417068481445,
+                  -0.6023229360580444,
+                  -0.007886850275099277,
+                  -0.2972971498966217,
+                  -0.2972971498966217,
+                  -0.12824071943759918,
+                  -0.15049681067466736,
+                  -0.15049681067466736,
+                  -0.43741241097450256,
+                  -0.13658638298511505,
+                  -0.09598254412412643,
+                  -2.3351752758026123,
+                  -0.04598377272486687,
+                  -0.04434381052851677,
+                  -0.03453076258301735,
+                  -0.03453076258301735,
+                  -5.146496772766113,
+                  0,
+                  0,
+                  -0.06477857381105423,
+                  -0.0527474582195282,
+                  -0.03186715394258499,
+                  -0.016054052859544754,
+                  -0.016054052859544754,
+                  -0.015650492161512375,
+                  -1.3637657165527344,
+                  -1.3637657165527344,
+                  -0.5736719369888306,
+                  -0.5736719369888306,
+                  0,
+                  -0.20920388400554657,
+                  -0.0795065388083458,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.006329520605504513,
+                  -0.006073624826967716,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.8842182159423828,
+                  0,
+                  0,
+                  -0.005807849578559399,
+                  -1.412177437641062
+                ],
+                [
+                  -0.9705871343612671,
+                  -1.1635980606079102,
+                  -1.3153436183929443,
+                  1.8874763250350952,
+                  -1.0227779150009155,
+                  -0.802245557308197,
+                  -0.2797321379184723,
+                  -0.8952152132987976,
+                  -0.6399313807487488,
+                  -0.108634814620018,
+                  -5.467012882232666,
+                  -0.032814666628837585,
+                  -1.1565417051315308,
+                  1.1760753393173218,
+                  5.1659770011901855,
+                  -4.865248680114746,
+                  1.4823261499404907,
+                  1.4823261499404907,
+                  -0.30598318576812744,
+                  -0.30598318576812744,
+                  -0.30598318576812744,
+                  9.960768699645996,
+                  12.536843299865723,
+                  8.105433464050293,
+                  8.105433464050293,
+                  -0.7846019864082336,
+                  -1.1987996101379395,
+                  -8.343830108642578,
+                  -0.6019821763038635,
+                  -0.13783809542655945,
+                  -0.14732564985752106,
+                  -0.2063407450914383,
+                  -0.0391329787671566,
+                  -0.035408683121204376,
+                  -0.035408683121204376,
+                  -0.19449929893016815,
+                  -0.18768446147441864,
+                  -1.1841775178909302,
+                  -0.5709111094474792,
+                  -0.01334391999989748,
+                  -0.4487197697162628,
+                  -0.4487197697162628,
+                  -4.948763370513916,
+                  -0.223638117313385,
+                  -0.223638117313385,
+                  -0.5623929500579834,
+                  -0.17491284012794495,
+                  -0.11014081537723541,
+                  -1.4196560382843018,
+                  -0.003857113653793931,
+                  -0.0037024973426014185,
+                  -0.0034032126422971487,
+                  -0.0034032126422971487,
+                  0,
+                  0,
+                  0,
+                  -0.009595917537808418,
+                  -0.00739672128111124,
+                  -0.003312550950795412,
+                  -0.0018084585899487138,
+                  -0.0018084585899487138,
+                  -0.0016356139676645398,
+                  -0.056490324437618256,
+                  -0.056490324437618256,
+                  -0.4181375205516815,
+                  -0.4181375205516815,
+                  0,
+                  -0.3737894892692566,
+                  -0.12604302167892456,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.5627970099449158,
+                  0,
+                  0,
+                  0,
+                  -3.893256318992242
+                ],
+                [
+                  -1.3956385850906372,
+                  -3.563135862350464,
+                  -1.7508978843688965,
+                  -6.805451393127441,
+                  -0.0750044658780098,
+                  -0.30649828910827637,
+                  -2.69172739982605,
+                  -1.4672694206237793,
+                  -0.057092584669589996,
+                  -3.3445212841033936,
+                  3.472799301147461,
+                  0,
+                  0.7353720664978027,
+                  -2.573164224624634,
+                  0,
+                  -1.7572872638702393,
+                  -0.18160611391067505,
+                  -0.18160611391067505,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3.8592092990875244,
+                  0,
+                  0,
+                  3.52339506149292,
+                  0.5930561423301697,
+                  7.498844623565674,
+                  1.0329701900482178,
+                  10.327166557312012,
+                  13.900796890258789,
+                  11.340527534484863,
+                  10.474763870239258,
+                  4.530941963195801,
+                  4.530941963195801,
+                  11.336682319641113,
+                  11.334973335266113,
+                  -0.9278499484062195,
+                  -0.8927653431892395,
+                  -2.5841500759124756,
+                  -1.086539626121521,
+                  -2.2138466835021973,
+                  -3.4542789459228516,
+                  -0.07128224521875381,
+                  -0.07128224521875381,
+                  -0.21866518259048462,
+                  -0.0458986796438694,
+                  -0.8982499241828918,
+                  -0.49921050667762756,
+                  -3.231769323348999,
+                  -3.2137227058410645,
+                  -1.7668994665145874,
+                  -1.7668994665145874,
+                  -1.7572872638702393,
+                  -2.0518946647644043,
+                  -2.0518946647644043,
+                  -2.297929525375366,
+                  -3.094883680343628,
+                  -3.0578575134277344,
+                  -0.6320945024490356,
+                  -0.6320945024490356,
+                  -0.9324544668197632,
+                  0,
+                  0,
+                  0,
+                  -0.6567406058311462,
+                  -1.868959903717041,
+                  -2.0798418521881104,
+                  -2.9158740043640137,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -3.0332541465759277,
+                  -3.0260729789733887,
+                  -3.9770944118499756,
+                  -0.8272630572319031,
+                  -0.6567406058311462,
+                  -0.6567406058311462,
+                  -0.6567406058311462,
+                  -0.6567406058311462,
+                  -0.6567406058311462,
+                  -0.6567406058311462,
+                  -1.3764898777008057,
+                  -1.3764898777008057,
+                  -1.3764898777008057,
+                  -1.3764898777008057,
+                  -1.3764898777008057,
+                  -0.06711828708648682,
+                  -0.06711828708648682,
+                  -0.06711828708648682,
+                  -3.00720477104187,
+                  2.632537388585566
+                ],
+                [
+                  5.081678867340088,
+                  1.6308146715164185,
+                  -6.288071632385254,
+                  3.0756115913391113,
+                  -0.9011586904525757,
+                  3.2506332397460938,
+                  -1.253876805305481,
+                  -3.4052867889404297,
+                  -0.199138343334198,
+                  -0.9730936884880066,
+                  1.2003616094589233,
+                  -0.7754890322685242,
+                  -3.8140604496002197,
+                  3.0400657653808594,
+                  -1.9540101289749146,
+                  -1.1551011800765991,
+                  -2.2486367225646973,
+                  -2.2486367225646973,
+                  -0.06741758435964584,
+                  -0.06741758435964584,
+                  -0.06741758435964584,
+                  -0.963845431804657,
+                  4.918886661529541,
+                  0,
+                  0,
+                  1.42207932472229,
+                  2.079138994216919,
+                  -1.4326200485229492,
+                  -2.848712205886841,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.6692478656768799,
+                  -1.6692478656768799,
+                  0,
+                  0,
+                  8.41975212097168,
+                  8.161252975463867,
+                  9.645161628723145,
+                  5.74483585357666,
+                  7.65368127822876,
+                  8.585280418395996,
+                  -0.4561017155647278,
+                  -0.4561017155647278,
+                  -1.5889110565185547,
+                  -0.4273969829082489,
+                  -0.4010717272758484,
+                  -3.478464365005493,
+                  -0.1516425460577011,
+                  -0.14585848152637482,
+                  -0.11416829377412796,
+                  -0.11416829377412796,
+                  -0.10315586626529694,
+                  -0.05410159006714821,
+                  -0.05410159006714821,
+                  -0.2836603820323944,
+                  -0.23913533985614777,
+                  -0.11930429935455322,
+                  -0.06725829094648361,
+                  -0.06725829094648361,
+                  -0.0633663758635521,
+                  -0.020498663187026978,
+                  -0.8585854172706604,
+                  -0.5709388256072998,
+                  -1.8024177551269531,
+                  -1.3083938360214233,
+                  -2.44891095161438,
+                  -1.4958609342575073,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.005093365907669067,
+                  -0.004879658110439777,
+                  0,
+                  0,
+                  -0.22735172510147095,
+                  -0.22735172510147095,
+                  -0.22735172510147095,
+                  -0.22735172510147095,
+                  -0.22735172510147095,
+                  -0.22735172510147095,
+                  -0.1433078646659851,
+                  -0.1433078646659851,
+                  -0.1433078646659851,
+                  -0.1433078646659851,
+                  -0.1433078646659851,
+                  -3.065875768661499,
+                  -2.861961841583252,
+                  -2.861961841583252,
+                  0,
+                  -3.4963914236762235
+                ],
+                [
+                  -3.941912889480591,
+                  -1.46127188205719,
+                  -1.4236575365066528,
+                  11.980262756347656,
+                  -2.111410617828369,
+                  -2.9075679779052734,
+                  -0.12501992285251617,
+                  -1.1078071594238281,
+                  -1.8210513591766357,
+                  -5.034359455108643,
+                  5.2877302169799805,
+                  -4.76860237121582,
+                  1.5874476432800293,
+                  4.256674289703369,
+                  -4.52079963684082,
+                  -2.6760339736938477,
+                  -1.4354971647262573,
+                  -1.4354971647262573,
+                  -0.9667437672615051,
+                  -0.9667437672615051,
+                  -0.9667437672615051,
+                  -2.6122512817382812,
+                  -4.055796146392822,
+                  -1.4211742877960205,
+                  -1.4211742877960205,
+                  -2.0243921279907227,
+                  -3.999471664428711,
+                  0,
+                  -3.834028720855713,
+                  0,
+                  0,
+                  0,
+                  -0.25815194845199585,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -4.20453405380249,
+                  -1.0776033401489258,
+                  0,
+                  -2.7105729579925537,
+                  -1.9781484603881836,
+                  -4.055796146392822,
+                  2.6191515922546387,
+                  1.0442742109298706,
+                  10.60437297821045,
+                  3.6724181175231934,
+                  3.677522897720337,
+                  5.8381781578063965,
+                  -0.1450694501399994,
+                  -0.13933365046977997,
+                  -0.1024562194943428,
+                  -0.1024562194943428,
+                  -0.0816866084933281,
+                  -0.04692672938108444,
+                  -0.04692672938108444,
+                  -0.29786890745162964,
+                  -0.8286342620849609,
+                  -0.10407492518424988,
+                  -0.06308741122484207,
+                  -0.06308741122484207,
+                  -0.057420819997787476,
+                  -0.43996015191078186,
+                  -0.7914568781852722,
+                  -1.0030100345611572,
+                  -1.9690399169921875,
+                  -0.003226424800232053,
+                  -0.2147040069103241,
+                  -0.8365086913108826,
+                  -0.5400221943855286,
+                  -0.5400221943855286,
+                  -0.5400221943855286,
+                  -0.5400221943855286,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -8.799684524536133,
+                  -0.6385225653648376,
+                  -0.6385225653648376,
+                  0,
+                  -8.98837957729399
+                ],
+                [
+                  -5.206275463104248,
+                  1.0125081539154053,
+                  -2.603708267211914,
+                  0.9823388457298279,
+                  -3.1738686561584473,
+                  -0.4591856300830841,
+                  -13.224204063415527,
+                  16.927108764648438,
+                  7.8632025718688965,
+                  -0.6524268388748169,
+                  -1.7768288850784302,
+                  -0.08715038746595383,
+                  -0.6482477784156799,
+                  -0.8814666271209717,
+                  -0.0917816236615181,
+                  -0.9140699505805969,
+                  -0.6171820163726807,
+                  -0.6171820163726807,
+                  -0.37292829155921936,
+                  -0.37292829155921936,
+                  -0.37292829155921936,
+                  -0.0917816236615181,
+                  -0.17475543916225433,
+                  -0.500115692615509,
+                  -0.500115692615509,
+                  -0.2257273644208908,
+                  -1.899909496307373,
+                  -0.12533286213874817,
+                  -1.6912586688995361,
+                  0,
+                  0,
+                  -0.28752854466438293,
+                  0,
+                  0,
+                  0,
+                  -0.28645721077919006,
+                  -0.2853737771511078,
+                  0,
+                  0,
+                  0,
+                  -1.8173983097076416,
+                  -0.011483641341328621,
+                  0,
+                  0,
+                  -0.1595604419708252,
+                  0,
+                  0,
+                  -0.15176643431186676,
+                  -0.1020173728466034,
+                  -0.6533542275428772,
+                  -0.6530416011810303,
+                  -0.3281813859939575,
+                  -0.3281813859939575,
+                  -0.08400538563728333,
+                  -0.04014485329389572,
+                  -0.04014485329389572,
+                  -0.46231552958488464,
+                  -0.6521490812301636,
+                  -0.6525804996490479,
+                  -0.11365274339914322,
+                  -0.11365274339914322,
+                  -0.1936410665512085,
+                  -0.7886149287223816,
+                  -0.8766222596168518,
+                  -0.3456612527370453,
+                  -2.3088631629943848,
+                  -0.011483641341328621,
+                  -0.2577374279499054,
+                  -3.020552158355713,
+                  -0.21303211152553558,
+                  -0.21303211152553558,
+                  -0.21303211152553558,
+                  -0.21303211152553558,
+                  -0.6514597535133362,
+                  -0.6511009931564331,
+                  0,
+                  0,
+                  -1.6289145946502686,
+                  -1.6289145946502686,
+                  -1.6289145946502686,
+                  -1.6289145946502686,
+                  -1.6289145946502686,
+                  -1.6289145946502686,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.6482477784156799,
+                  -0.1424095332622528,
+                  -0.1424095332622528,
+                  -0.6488627195358276,
+                  0.6543789282281726
+                ],
+                [
+                  -4.507763385772705,
+                  -0.32664793729782104,
+                  -0.18646273016929626,
+                  -4.865778923034668,
+                  -0.16798749566078186,
+                  0,
+                  11.449976921081543,
+                  -4.302627086639404,
+                  -0.010228745639324188,
+                  -2.2961537837982178,
+                  -0.30252787470817566,
+                  0,
+                  -0.4300588369369507,
+                  -1.2002484798431396,
+                  0,
+                  -1.179003357887268,
+                  -0.039333246648311615,
+                  -0.039333246648311615,
+                  -0.02027755416929722,
+                  -0.02027755416929722,
+                  -0.02027755416929722,
+                  0,
+                  -1.149404764175415,
+                  -0.018722187727689743,
+                  -0.018722187727689743,
+                  -1.113906979560852,
+                  -1.1827218532562256,
+                  -1.1427761316299438,
+                  -1.8497068881988525,
+                  -0.4422801733016968,
+                  -13.453179359436035,
+                  -2.2666995525360107,
+                  -0.005447442643344402,
+                  -0.009220452047884464,
+                  -0.009220452047884464,
+                  -2.265488624572754,
+                  -2.264235019683838,
+                  0,
+                  0,
+                  0,
+                  -0.0990246832370758,
+                  -0.33831992745399475,
+                  0,
+                  0,
+                  -0.0037221256643533707,
+                  0,
+                  0,
+                  -0.5661073923110962,
+                  -1.0969377756118774,
+                  12.021139144897461,
+                  12.021923065185547,
+                  -1.1367690563201904,
+                  -1.1367690563201904,
+                  -1.0941792726516724,
+                  -0.4308789074420929,
+                  -0.4308789074420929,
+                  -1.560278058052063,
+                  -2.293868064880371,
+                  -2.2944223880767822,
+                  -0.4013119339942932,
+                  -0.4013119339942932,
+                  -0.7383006811141968,
+                  -0.05870002880692482,
+                  -0.07386711239814758,
+                  -0.14183077216148376,
+                  -0.2839891314506531,
+                  -0.33831992745399475,
+                  -0.24013206362724304,
+                  -1.3055380582809448,
+                  -0.025047030299901962,
+                  -0.025047030299901962,
+                  -0.025047030299901962,
+                  -0.025047030299901962,
+                  -2.293259859085083,
+                  -2.2927119731903076,
+                  -0.46432262659072876,
+                  -0.9917967915534973,
+                  -0.06557077169418335,
+                  -0.06557077169418335,
+                  -0.06557077169418335,
+                  -0.06557077169418335,
+                  -0.06557077169418335,
+                  -0.06557077169418335,
+                  -0.0056627057492733,
+                  -0.0056627057492733,
+                  -0.0056627057492733,
+                  -0.0056627057492733,
+                  -0.0056627057492733,
+                  -0.09141018241643906,
+                  -0.01904073730111122,
+                  -0.01904073730111122,
+                  -2.29172682762146,
+                  2.299106258255305
+                ],
+                [
+                  -0.3445940613746643,
+                  -0.22540512681007385,
+                  -0.6866873502731323,
+                  -2.554563283920288,
+                  -0.6770220398902893,
+                  0,
+                  -0.7695252895355225,
+                  -0.1560477763414383,
+                  -0.015115698799490929,
+                  -0.7811518311500549,
+                  -0.2298814058303833,
+                  0,
+                  -0.2090650200843811,
+                  -1.9566532373428345,
+                  -1.755874752998352,
+                  5.6103620529174805,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3685542643070221,
+                  0,
+                  0,
+                  -0.4113989472389221,
+                  -0.4198618233203888,
+                  -0.3685542643070221,
+                  -1.0435220003128052,
+                  0,
+                  -0.12512856721878052,
+                  -0.6593038439750671,
+                  -0.006139503791928291,
+                  -0.048237092792987823,
+                  -0.048237092792987823,
+                  -0.6576815843582153,
+                  -0.6569506525993347,
+                  0,
+                  0,
+                  -0.0005987336626276374,
+                  -0.05619077757000923,
+                  -0.09428095072507858,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.26534754037857056,
+                  -0.1562390923500061,
+                  -0.6567375659942627,
+                  -0.6567175388336182,
+                  6.814491271972656,
+                  6.814491271972656,
+                  8.0186185836792,
+                  -0.19040866196155548,
+                  -0.19040866196155548,
+                  -0.7187994122505188,
+                  -0.8481744527816772,
+                  -0.7239834666252136,
+                  -0.19673538208007812,
+                  -0.19673538208007812,
+                  -0.24814043939113617,
+                  -0.6523782014846802,
+                  -0.6529185771942139,
+                  -0.05692104995250702,
+                  -0.1335950493812561,
+                  -0.09428095072507858,
+                  -0.16288302838802338,
+                  -0.513744592666626,
+                  -0.007127532735466957,
+                  -0.007127532735466957,
+                  -0.007127532735466957,
+                  -0.007127532735466957,
+                  -0.6978128552436829,
+                  -0.6899619102478027,
+                  -0.059809859842061996,
+                  -0.3213576376438141,
+                  -0.046674955636262894,
+                  -0.046674955636262894,
+                  -0.046674955636262894,
+                  -0.046674955636262894,
+                  -0.046674955636262894,
+                  -0.046674955636262894,
+                  -0.000755680724978447,
+                  -0.000755680724978447,
+                  -0.000755680724978447,
+                  -0.000755680724978447,
+                  -0.000755680724978447,
+                  -0.02055603638291359,
+                  -0.004691255744546652,
+                  -0.004691255744546652,
+                  -0.6797977089881897,
+                  0.6567292394837307
+                ],
+                [
+                  -0.44411444664001465,
+                  -0.38480445742607117,
+                  -0.6231234073638916,
+                  -0.9716036915779114,
+                  -0.16671158373355865,
+                  0,
+                  -0.050749387592077255,
+                  -0.013946565799415112,
+                  -0.00020168906485196203,
+                  -0.19734515249729156,
+                  -0.07115833461284637,
+                  0,
+                  -0.15056750178337097,
+                  -0.0572328045964241,
+                  -0.0001794751442503184,
+                  -0.15638604760169983,
+                  -0.002351184841245413,
+                  -0.002351184841245413,
+                  -0.0009480550652369857,
+                  -0.0009480550652369857,
+                  -0.0009480550652369857,
+                  -0.0001794751442503184,
+                  -0.04492300748825073,
+                  -0.0006286204443313181,
+                  -0.0006286204443313181,
+                  -0.1611698865890503,
+                  -0.1775445193052292,
+                  -0.043708138167858124,
+                  2.516463041305542,
+                  -1.2363628149032593,
+                  -0.026743819937109947,
+                  -0.03366709128022194,
+                  -0.0014732542913407087,
+                  -0.0022853550035506487,
+                  -0.0022853550035506487,
+                  -0.03217519819736481,
+                  -0.03098607063293457,
+                  0,
+                  0,
+                  0,
+                  -0.018695497885346413,
+                  -0.8121711611747742,
+                  0,
+                  0,
+                  -0.09949534386396408,
+                  0,
+                  0,
+                  -2.21121883392334,
+                  -0.04773456230759621,
+                  -0.02984038181602955,
+                  -0.028736576437950134,
+                  -0.022806283086538315,
+                  -0.022806283086538315,
+                  -0.007047654129564762,
+                  6.879751205444336,
+                  6.879751205444336,
+                  6.440707206726074,
+                  2.1838181018829346,
+                  -0.36074963212013245,
+                  -2.4242260456085205,
+                  -2.4242260456085205,
+                  -4.87653923034668,
+                  -0.14023813605308533,
+                  -0.14023813605308533,
+                  -0.030049555003643036,
+                  -0.05980531498789787,
+                  -0.8121711611747742,
+                  -0.4391319453716278,
+                  -0.1143873855471611,
+                  -0.0014685862697660923,
+                  -0.0014685862697660923,
+                  -0.0014685862697660923,
+                  -0.0014685862697660923,
+                  -0.09253358095884323,
+                  -0.08924157917499542,
+                  -1.2726086378097534,
+                  -0.0367920882999897,
+                  -0.013946565799415112,
+                  -0.013946565799415112,
+                  -0.013946565799415112,
+                  -0.013946565799415112,
+                  -0.013946565799415112,
+                  -0.013946565799415112,
+                  -0.12114863842725754,
+                  -0.12114863842725754,
+                  -0.12114863842725754,
+                  -0.12114863842725754,
+                  -0.12114863842725754,
+                  -0.005493334494531155,
+                  -0.0020099084358662367,
+                  -0.0020099084358662367,
+                  -0.054617367684841156,
+                  -2.0113487199531885
+                ],
+                [
+                  -0.8276585340499878,
+                  -1.9692003726959229,
+                  -1.7963253259658813,
+                  -2.866058826446533,
+                  -0.3205631375312805,
+                  0,
+                  -2.7194602489471436,
+                  -0.18572194874286652,
+                  -0.06114146485924721,
+                  -2.7782933712005615,
+                  -0.5557405352592468,
+                  0,
+                  -0.5511553287506104,
+                  -1.484506607055664,
+                  -0.014196359552443027,
+                  -1.4957470893859863,
+                  -0.1494799107313156,
+                  -0.1494799107313156,
+                  -0.1049826592206955,
+                  -0.1049826592206955,
+                  -0.1049826592206955,
+                  -0.005974603351205587,
+                  -1.4098811149597168,
+                  -0.09894893318414688,
+                  -0.09894893318414688,
+                  -1.4384349584579468,
+                  -1.3534750938415527,
+                  -1.363610029220581,
+                  -2.2720868587493896,
+                  -0.5119534730911255,
+                  -0.674569845199585,
+                  -2.7379894256591797,
+                  -0.024805113673210144,
+                  -0.26107585430145264,
+                  -0.26107585430145264,
+                  -2.7346343994140625,
+                  -2.7315902709960938,
+                  0,
+                  0,
+                  0,
+                  -0.1714777797460556,
+                  -0.4166031777858734,
+                  0,
+                  0,
+                  -0.017889905720949173,
+                  -1.2625364065170288,
+                  0,
+                  2.6454927921295166,
+                  -1.2998952865600586,
+                  -2.72847580909729,
+                  -2.725332736968994,
+                  -1.379052758216858,
+                  -1.379052758216858,
+                  -1.2611464262008667,
+                  -0.24988770484924316,
+                  -0.24988770484924316,
+                  -4.399573802947998,
+                  9.821728706359863,
+                  11.910685539245605,
+                  8.102556228637695,
+                  8.102556228637695,
+                  16.012279510498047,
+                  -0.11278887093067169,
+                  -0.1783195436000824,
+                  -0.19770407676696777,
+                  -0.4945385456085205,
+                  -0.4166031777858734,
+                  -0.41423311829566956,
+                  -1.675525188446045,
+                  -0.04223960265517235,
+                  -0.04223960265517235,
+                  -0.04223960265517235,
+                  -0.04223960265517235,
+                  -2.7597453594207764,
+                  -2.757014751434326,
+                  -0.5250468850135803,
+                  -1.1099631786346436,
+                  -0.1183801218867302,
+                  -0.1183801218867302,
+                  -0.1183801218867302,
+                  -0.1183801218867302,
+                  -0.1183801218867302,
+                  -0.1183801218867302,
+                  -0.02507377415895462,
+                  -0.02507377415895462,
+                  -0.02507377415895462,
+                  -0.02507377415895462,
+                  -0.02507377415895462,
+                  -0.11590156704187393,
+                  -0.025398537516593933,
+                  -0.025398537516593933,
+                  -2.751201868057251,
+                  2.8006521497296397
+                ],
+                [
+                  -1.4613003730773926,
+                  -0.14287608861923218,
+                  -2.087895154953003,
+                  0.5172408819198608,
+                  2.2711312770843506,
+                  0,
+                  -0.14436975121498108,
+                  -1.7822740077972412,
+                  0,
+                  -0.29949939250946045,
+                  -0.3973289728164673,
+                  -0.008716444484889507,
+                  -1.035977840423584,
+                  -1.8436037302017212,
+                  -0.7592310905456543,
+                  2.9633708000183105,
+                  -0.203838050365448,
+                  -0.203838050365448,
+                  -0.13245393335819244,
+                  -0.13245393335819244,
+                  -0.13245393335819244,
+                  -0.005794300697743893,
+                  -0.15285007655620575,
+                  -0.17916825413703918,
+                  -0.17916825413703918,
+                  -2.4718868732452393,
+                  -3.65104603767395,
+                  -0.11601608246564865,
+                  2.71970272064209,
+                  -1.7358167171478271,
+                  -0.088398277759552,
+                  -0.14967451989650726,
+                  0,
+                  0,
+                  0,
+                  -0.1478901207447052,
+                  -0.14407938718795776,
+                  0,
+                  0,
+                  -0.01030160952359438,
+                  -1.1824012994766235,
+                  5.8271894454956055,
+                  0,
+                  0,
+                  -1.0132341384887695,
+                  0,
+                  0,
+                  -0.030594924464821815,
+                  -0.06351469457149506,
+                  -0.11351273953914642,
+                  -0.11080177128314972,
+                  -0.07277242839336395,
+                  -0.07277242839336395,
+                  -1.9572399854660034,
+                  -0.876110315322876,
+                  -0.876110315322876,
+                  -0.08193298429250717,
+                  -0.09621480107307434,
+                  -0.07706470787525177,
+                  -0.022985467687249184,
+                  -0.022985467687249184,
+                  -0.027407051995396614,
+                  5.675233364105225,
+                  3.2328197956085205,
+                  9.30752944946289,
+                  5.6096649169921875,
+                  6.7447614669799805,
+                  -1.3081163167953491,
+                  -1.9349243640899658,
+                  -0.9496237635612488,
+                  -0.9496237635612488,
+                  -0.9496237635612488,
+                  -0.9496237635612488,
+                  -0.26250457763671875,
+                  -0.2551020383834839,
+                  -1.770969033241272,
+                  -0.02035692147910595,
+                  -0.25023362040519714,
+                  -0.25023362040519714,
+                  -0.25023362040519714,
+                  -0.25023362040519714,
+                  -0.25023362040519714,
+                  -0.25023362040519714,
+                  -0.0012376977829262614,
+                  -0.0012376977829262614,
+                  -0.0012376977829262614,
+                  -0.0012376977829262614,
+                  -0.0012376977829262614,
+                  -0.07306627929210663,
+                  -0.007470924872905016,
+                  -0.007470924872905016,
+                  -0.21044352650642395,
+                  -1.006003568574225
+                ],
+                [
+                  2.5616233348846436,
+                  2.751479387283325,
+                  -5.510801315307617,
+                  2.3773834705352783,
+                  4.902222633361816,
+                  -0.0055311270989477634,
+                  -0.9093454480171204,
+                  -4.801861763000488,
+                  -0.07572553306818008,
+                  -0.6486982107162476,
+                  -1.4608579874038696,
+                  -0.5140078067779541,
+                  -0.5654399394989014,
+                  -0.533139169216156,
+                  -0.0709649994969368,
+                  -0.7475923895835876,
+                  -0.23496593534946442,
+                  -0.23496593534946442,
+                  -0.15947094559669495,
+                  -0.15947094559669495,
+                  -0.15947094559669495,
+                  -0.010098875500261784,
+                  -0.2984675467014313,
+                  -0.18555393815040588,
+                  -0.18555393815040588,
+                  -1.801928997039795,
+                  -0.3359772264957428,
+                  -0.00005402098395279609,
+                  2.858661651611328,
+                  -0.5410138368606567,
+                  0,
+                  -0.0006442024023272097,
+                  0,
+                  -0.3376806974411011,
+                  -0.3376806974411011,
+                  0,
+                  0,
+                  -2.0527477264404297,
+                  0,
+                  -1.0415844917297363,
+                  -0.14128094911575317,
+                  -0.23529262840747833,
+                  -0.22863171994686127,
+                  0,
+                  -0.5487410426139832,
+                  0,
+                  0,
+                  0,
+                  -0.02092139795422554,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.2578544318675995,
+                  -0.2578544318675995,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.6822303533554077,
+                  -0.868456244468689,
+                  -1.08133864402771,
+                  -1.5759022235870361,
+                  -0.23529262840747833,
+                  8.948034286499023,
+                  6.715391635894775,
+                  -0.2034715861082077,
+                  -0.2034715861082077,
+                  -0.2034715861082077,
+                  -0.2034715861082077,
+                  -0.16063660383224487,
+                  -0.15441583096981049,
+                  -0.7014163136482239,
+                  -4.25015115737915,
+                  -0.008632509969174862,
+                  -0.008632509969174862,
+                  -0.008632509969174862,
+                  -0.008632509969174862,
+                  -0.008632509969174862,
+                  -0.008632509969174862,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.378018856048584,
+                  -0.12617406249046326,
+                  -0.12617406249046326,
+                  -0.07560911029577255,
+                  -2.46954985158681
+                ],
+                [
+                  -4.163217544555664,
+                  5.74745512008667,
+                  2.748774290084839,
+                  0.4214245676994324,
+                  -4.122113227844238,
+                  -3.5393595695495605,
+                  -0.006097568664699793,
+                  -0.2962581217288971,
+                  -0.5263210535049438,
+                  -1.8544636964797974,
+                  -0.271697461605072,
+                  0,
+                  -2.396185874938965,
+                  -0.6472650766372681,
+                  0,
+                  -3.0314366817474365,
+                  -0.0047828699462115765,
+                  -0.0047828699462115765,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3.1901519298553467,
+                  2.899169921875,
+                  0,
+                  12.422472953796387,
+                  -4.255747318267822,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.030340157449245453,
+                  -0.02589251846075058,
+                  -0.5887131094932556,
+                  -2.154871940612793,
+                  0,
+                  -2.9614267349243164,
+                  1.1921449899673462,
+                  -3.5160109996795654,
+                  -0.36715731024742126,
+                  -0.14489910006523132,
+                  -0.01428249105811119,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.1631650924682617,
+                  -2.1631650924682617,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -3.0314366817474365,
+                  2.7446835041046143,
+                  -3.205850839614868,
+                  4.469433784484863,
+                  -2.154871940612793,
+                  -0.5175575017929077,
+                  -0.09685952961444855,
+                  2.2247331142425537,
+                  2.2247331142425537,
+                  2.2247331142425537,
+                  2.2247331142425537,
+                  -0.1180075854063034,
+                  -0.11316592991352081,
+                  -4.319787502288818,
+                  -0.09685952961444855,
+                  -0.271697461605072,
+                  -0.271697461605072,
+                  -0.271697461605072,
+                  -0.271697461605072,
+                  -0.271697461605072,
+                  -0.271697461605072,
+                  -1.8033504486083984,
+                  -1.8033504486083984,
+                  -1.8033504486083984,
+                  -1.8033504486083984,
+                  -1.8033504486083984,
+                  -0.5031654238700867,
+                  -0.22389622032642365,
+                  -0.22389622032642365,
+                  -0.05001271888613701,
+                  -7.979521469469405
+                ],
+                [
+                  -2.3742775917053223,
+                  -1.8856312036514282,
+                  -0.7515454888343811,
+                  -2.9409608840942383,
+                  -1.6090611219406128,
+                  -0.04567461088299751,
+                  -1.9877365827560425,
+                  -0.33694183826446533,
+                  -0.16033241152763367,
+                  -2.0922908782958984,
+                  -2.1459341049194336,
+                  -0.006250995676964521,
+                  -0.7328889966011047,
+                  -1.245957612991333,
+                  -0.06103343889117241,
+                  -1.0229980945587158,
+                  -0.2459149807691574,
+                  -0.2459149807691574,
+                  -0.16069048643112183,
+                  -0.16069048643112183,
+                  -0.16069048643112183,
+                  -0.01127141434699297,
+                  -1.0871938467025757,
+                  -0.16768614947795868,
+                  -0.16768614947795868,
+                  -1.0151070356369019,
+                  -1.1420329809188843,
+                  -1.0096337795257568,
+                  2.0154223442077637,
+                  -4.003058910369873,
+                  -0.678052544593811,
+                  -1.988242506980896,
+                  0,
+                  -0.0799027681350708,
+                  -0.0799027681350708,
+                  -1.9880279302597046,
+                  -1.9879536628723145,
+                  0,
+                  0,
+                  -0.00008361171785509214,
+                  -0.23787984251976013,
+                  -2.0016303062438965,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4808322787284851,
+                  -0.9122956395149231,
+                  -1.987868070602417,
+                  -1.9877653121948242,
+                  -0.9940286874771118,
+                  -0.9940286874771118,
+                  -0.9650566577911377,
+                  -2.001677989959717,
+                  -2.001677989959717,
+                  -1.3094884157180786,
+                  -1.9873802661895752,
+                  -1.9874613285064697,
+                  -0.35553330183029175,
+                  -0.35553330183029175,
+                  -0.6784428358078003,
+                  0,
+                  0,
+                  0,
+                  -0.14795605838298798,
+                  -2.0016303062438965,
+                  -1.9154434204101562,
+                  4.447772979736328,
+                  0,
+                  0,
+                  0,
+                  0,
+                  12.29712963104248,
+                  12.296828269958496,
+                  10.281814575195312,
+                  7.849801540374756,
+                  -0.14795605838298798,
+                  -0.14795605838298798,
+                  -0.14795605838298798,
+                  -0.14795605838298798,
+                  -0.14795605838298798,
+                  -0.14795605838298798,
+                  -0.17382918298244476,
+                  -0.17382918298244476,
+                  -0.17382918298244476,
+                  -0.17382918298244476,
+                  -0.17382918298244476,
+                  -0.19009727239608765,
+                  -0.04763657599687576,
+                  -0.04763657599687576,
+                  -1.9996320009231567,
+                  1.9880134109548446
+                ],
+                [
+                  -2.5410385131835938,
+                  -1.84647798538208,
+                  -2.1507294178009033,
+                  -13.36811637878418,
+                  -0.37638697028160095,
+                  -0.659396231174469,
+                  -2.4823710918426514,
+                  1.8723342418670654,
+                  -0.3622361123561859,
+                  11.238747596740723,
+                  -7.6287455558776855,
+                  -2.5835413932800293,
+                  0.6475153565406799,
+                  9.046789169311523,
+                  -1.240971326828003,
+                  -1.581729531288147,
+                  -0.07149262726306915,
+                  -0.07149262726306915,
+                  -0.037695109844207764,
+                  -0.037695109844207764,
+                  -0.037695109844207764,
+                  -0.5584565997123718,
+                  -1.311358094215393,
+                  -0.0012832158245146275,
+                  -0.0012832158245146275,
+                  2.289140462875366,
+                  2.4602653980255127,
+                  -1.306914210319519,
+                  -2.154770612716675,
+                  -1.252864956855774,
+                  -0.9822474718093872,
+                  -2.515324354171753,
+                  -7.40591287612915,
+                  -1.0747214555740356,
+                  -1.0747214555740356,
+                  -2.514616012573242,
+                  -2.5140209197998047,
+                  -0.26035255193710327,
+                  -3.199246406555176,
+                  -0.2755188047885895,
+                  -2.0939507484436035,
+                  -3.7100493907928467,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.5513900518417358,
+                  2.318281888961792,
+                  -2.4852869510650635,
+                  -2.4841928482055664,
+                  -1.2473777532577515,
+                  -1.2473777532577515,
+                  -0.9126467108726501,
+                  -0.3706910014152527,
+                  -0.3706910014152527,
+                  -1.61851966381073,
+                  -2.479445695877075,
+                  -2.481055736541748,
+                  -0.43977269530296326,
+                  -0.43977269530296326,
+                  -0.874821126461029,
+                  0,
+                  0,
+                  0,
+                  2.475114345550537,
+                  -0.06995672732591629,
+                  0,
+                  -1.2443984746932983,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.4780967235565186,
+                  -2.4768073558807373,
+                  -0.34336552023887634,
+                  -1.2443984746932983,
+                  2.475114345550537,
+                  2.475114345550537,
+                  2.475114345550537,
+                  2.475114345550537,
+                  2.475114345550537,
+                  2.475114345550537,
+                  -0.02183045819401741,
+                  -0.02183045819401741,
+                  -0.02183045819401741,
+                  -0.02183045819401741,
+                  -0.02183045819401741,
+                  15.21198558807373,
+                  -0.9138333797454834,
+                  -0.9138333797454834,
+                  11.771377563476562,
+                  2.8144894131505853
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "me conta uma piada"
+      ],
+      [
+        "pt",
+        "quero uma piada"
+      ],
+      [
+        "pt",
+        "pode contar uma piada?"
+      ],
+      [
+        "pt",
+        "conta uma piada"
+      ],
+      [
+        "pt",
+        "me fala outra piada"
+      ],
+      [
+        "pt",
+        "mais uma piada"
+      ],
+      [
+        "pt",
+        "me conte mais uma"
+      ],
+      [
+        "pt",
+        "qual a sua piada"
+      ],
+      [
+        "pt",
+        "qual é a sua piada"
+      ],
+      [
+        "pt",
+        "essa piada foi boa"
+      ],
+      [
+        "pt",
+        "gostei da piada"
+      ],
+      [
+        "pt",
+        "ri muito dessa piada"
+      ],
+      [
+        "pt",
+        "essa piada foi ruim"
+      ],
+      [
+        "pt",
+        "não gostei da piada"
+      ],
+      [
+        "pt",
+        "piada sem graça"
+      ],
+      [
+        "pt",
+        "O que?"
+      ],
+      [
+        "pt",
+        "Não sei"
+      ],
+      [
+        "pt",
+        "como assim?"
+      ],
+      [
+        "pt",
+        "fala logo"
+      ],
+      [
+        "pt",
+        "continua"
+      ],
+      [
+        "pt",
+        "qual é a resposta?"
+      ],
+      [
+        "pt",
+        "me diz o final"
+      ],
+      [
+        "pt",
+        "hmm"
+      ],
+      [
+        "pt",
+        "an"
+      ],
+      [
+        "pt",
+        "pode explicar essa piada?"
+      ],
+      [
+        "pt",
+        "o que significa essa piada?"
+      ],
+      [
+        "pt",
+        "me conta o significado"
+      ],
+      [
+        "pt",
+        "por que essa piada é engraçada?"
+      ],
+      [
+        "pt",
+        "me explica a piada"
+      ],
+      [
+        "pt",
+        "não entendi a piada"
+      ],
+      [
+        "pt",
+        "deixa eu te contar uma piada"
+      ],
+      [
+        "pt",
+        "posso te contar uma piada?"
+      ],
+      [
+        "pt",
+        "vou te contar uma piada"
+      ],
+      [
+        "pt",
+        "escuta essa piada"
+      ],
+      [
+        "pt",
+        "a piada é essa"
+      ],
+      [
+        "pt",
+        "me conta outra"
+      ],
+      [
+        "pt",
+        "quero outra piada"
+      ],
+      [
+        "pt",
+        "mais uma piada"
+      ],
+      [
+        "pt",
+        "olá"
+      ],
+      [
+        "pt",
+        "oi"
+      ],
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "fala"
+      ],
+      [
+        "pt",
+        "como você está?"
+      ],
+      [
+        "pt",
+        "tudo bem?"
+      ],
+      [
+        "pt",
+        "vou bem"
+      ],
+      [
+        "pt",
+        "firme"
+      ],
+      [
+        "pt",
+        "tudo em ordem"
+      ],
+      [
+        "pt",
+        "tudo ótimo"
+      ],
+      [
+        "pt",
+        "tudo bem"
+      ],
+      [
+        "pt",
+        "bem"
+      ],
+      [
+        "pt",
+        "quero saber como fazer uma boa piada"
+      ],
+      [
+        "pt",
+        "dicas para contar piadas"
+      ],
+      [
+        "pt",
+        "como ser engraçado?"
+      ],
+      [
+        "pt",
+        "me ajude a praticar"
+      ],
+      [
+        "pt",
+        "quero praticar contar piadas"
+      ],
+      [
+        "pt",
+        "me ajude com piadas"
+      ],
+      [
+        "pt",
+        "como contar uma piada"
+      ],
+      [
+        "pt",
+        "como eu conto uma piada?"
+      ],
+      [
+        "pt",
+        "quais são os passos para contar uma piada?"
+      ],
+      [
+        "pt",
+        "o que fazer para contar uma piada?"
+      ],
+      [
+        "pt",
+        "sim"
+      ],
+      [
+        "pt",
+        "claro"
+      ],
+      [
+        "pt",
+        "com certeza"
+      ],
+      [
+        "pt",
+        "vamos praticar"
+      ],
+      [
+        "pt",
+        "Por que a galinha atravessou a rua? Para chegar do outro lado!"
+      ],
+      [
+        "pt",
+        "Qual é o animal que anda com uma perna só? O pato!"
+      ],
+      [
+        "pt",
+        "minha piada é essa: por que o céu é azul?"
+      ],
+      [
+        "pt",
+        "minha piada é essa"
+      ],
+      [
+        "pt",
+        "escuta essa"
+      ],
+      [
+        "pt",
+        "porque"
+      ],
+      [
+        "pt",
+        "o que"
+      ],
+      [
+        "pt",
+        "Qual"
+      ],
+      [
+        "pt",
+        "qual é"
+      ],
+      [
+        "pt",
+        "qual"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "jokes.practice.confirm": [
+          {
+            "answer": "Ótimo! Comece contando uma piada, e eu vou te ajudar a aprimorá-la."
+          }
+        ],
+        "jokes.userJoke": [
+          {
+            "answer": "Legal, gostei da sua piada! Se quiser, posso ajudar a aprimorá-la ou contar uma outra."
+          },
+          {
+            "answer": "Esssa piada esta muito boa HAHAHAHAHAHA!"
+          },
+          {
+            "answer": "Piada de tiozão em..."
+          },
+          {
+            "answer": "rsrsrs..."
+          }
+        ],
+        "greetings.greeting": [
+          {
+            "answer": "Bom dia! Como vai?"
+          }
+        ],
+        "greetings.how_user_are": [
+          {
+            "answer": "Ai sim chefe! Como posso tá te ajudando hoje?"
+          },
+          {
+            "answer": "Que maravilha! Como devo te ajudar hoje?"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Olá! Como posso te ajudar hoje?"
+          }
+        ],
+        "greetings.how_are_you": [
+          {
+            "answer": "Estou aqui, pronto para rir com você! E você?"
+          }
+        ],
+        "jokes.tips": [
+          {
+            "answer": "Uma boa piada deve ter um setup envolvente e uma punchline surpreendente. Tente usar jogos de palavras ou reviravoltas para deixar tudo mais divertido!"
+          }
+        ],
+        "jokes.practice": [
+          {
+            "answer": "Ótimo! Vamos praticar! Comece contando uma piada, e eu vou te ajudar a aprimorá-la."
+          }
+        ],
+        "jokes.how_to_tell": [
+          {
+            "answer": "Para contar uma boa piada, comece com uma introdução que prenda a atenção e finalize com um desfecho inesperado. Você gostaria de praticar?"
+          }
+        ],
+        "jokes.tell": [
+          {
+            "answer": "Ok, aqui vai uma piada para você!"
+          }
+        ],
+        "jokes.evaluate.good": [
+          {
+            "answer": "Que bom que você gostou! Posso te contar outra?"
+          }
+        ],
+        "jokes.evaluate.bad": [
+          {
+            "answer": "Desculpa, vou tentar contar outra melhor na próxima!"
+          }
+        ],
+        "jokes.confirmation": [
+          {
+            "answer": "Aqui vai a segunda parte da piada!"
+          }
+        ],
+        "jokes.explain": [
+          {
+            "answer": "A piada brinca com a linguagem ou a lógica, muitas vezes fazendo uma comparação inusitada."
+          },
+          {
+            "answer": "A piada é engraçada porque joga com as expectativas do ouvinte e cria um contraste inesperado."
+          }
+        ],
+        "jokes.tell.another": [
+          {
+            "answer": "Claro! Aqui vai outra piada: "
+          },
+          {
+            "answer": "Certo, espero que você goste dessa: "
+          },
+          {
+            "answer": "Vamos lá! Aqui está mais uma: "
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
