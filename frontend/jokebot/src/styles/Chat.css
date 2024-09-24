@@ -1,5 +1,5 @@
 .chat-container {
-  width: 310px;
+  width: 320px;
   height: 460px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -35,7 +35,7 @@
 
 input {
   flex-grow: 1;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
