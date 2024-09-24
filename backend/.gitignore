@@ -4,3 +4,5 @@
 /.pnp
 .pnp.js
 
+# Environment variables
+.env
